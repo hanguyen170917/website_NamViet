@@ -101,21 +101,167 @@
         <span>Top tìm kiếm:</span>
       </div>
       <ul>
-          <li>#Loadidong</li>
-          <li>#USB</li>
-          <li>#Chuotkhongdayapple</li>
-          <li>#iphone13</li>
-          <li>#iphone11</li>
-          <li>#macbookM12021</li>
-          <li>#oplungiphone</li>
-        </ul>
+        <li>#Loadidong</li>
+        <li>#USB</li>
+        <li>#Chuotkhongdayapple</li>
+        <li>#iphone13</li>
+        <li>#iphone11</li>
+        <li>#macbookM12021</li>
+        <li>#oplungiphone</li>
+      </ul>
     </div>
   </section>
+
+  <!-- PRODUCTS_BEST_SELLER -->
+  <section class="content products_best_seller">
+    <div class="products_best_seller_title">
+      <h1>
+        SẢN PHẨM NỔI BẬT
+        <button>
+          <img src="../assets/products_best_seller/icon_previous.png" alt="" />
+        </button>
+        <button>
+          <img src="../assets/products_best_seller/icon_next.png" alt="" />
+        </button>
+      </h1>
+      <p>Các sản phẩm được người dùng đánh giá cao vì chất lượng</p>
+    </div>
+
+    <div class="products_best_seller_list">
+      <div class="row">
+        <ProductItem />
+        <ProductItem />
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER 2 -->
+  <section class="content banner_2">
+    <img src="../assets/banners/Banner-2.jpg" alt="" />
+  </section>
+
+  <!-- PHONE -->
+  <section class="content products_best_seller phone">
+    <div class="products_best_seller_title_phone">
+      <h1>ĐIỆN THOẠI</h1>
+      <p>Các sản phẩm điện thoại do Nam Việt cung cấp mới nhất</p>
+    </div>
+
+    <div class="products_best_seller_list">
+      <div class="row">
+        <ProductItem />
+      </div>
+    </div>
+  </section>
+
+  <!-- TABLET -->
+  <section class="content products_best_seller phone">
+    <div class="products_best_seller_title_phone">
+      <h1>MÁY TÍNH BẢNG</h1>
+      <p>Các sản phẩm máy tính bảng do Nam Việt cung cấp mới nhất</p>
+    </div>
+
+    <div class="products_best_seller_list">
+      <div class="row">
+        <ProductItem />
+      </div>
+    </div>
+  </section>
+
+  <!-- LAPTOP -->
+  <section class="content products_best_seller phone">
+    <div class="products_best_seller_title_phone">
+      <h1>MÁY TÍNH APPLE</h1>
+      <p>Các sản phẩm máy tính do Nam Việt cung cấp mới nhất</p>
+    </div>
+
+    <div class="products_best_seller_list">
+      <div class="row">
+        <ProductItem />
+      </div>
+    </div>
+  </section>
+
+  <!-- OTHER_PRODUCT -->
+  <section class="content products_best_seller phone">
+    <div class="products_best_seller_title_phone">
+      <h1>SẢN PHẨM KHÁC</h1>
+    </div>
+
+    <div class="products_best_seller_list" style="margin-top: 20px">
+      <div class="row">
+        <ProductItem />
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER 3 -->
+  <section class="content">
+    <div class="banner_3">
+      <div class="banner_3_title">
+        <h1>TAI NGHE</h1>
+        <h1>NHÃN HÀNG NỔI TIẾNG</h1>
+      </div>
+      <div class="banner_3_content">
+        <div class="banner_3_content_left">
+          <h1>Thương hiệu</h1>
+          <img src="../assets/banner_3/logo_apple.png" alt="" />
+          <p class="product_type">Tai nghe không dây</p>
+          <h1>Apple Airpods 3</h1>
+          <p class="price">Giá: 2.000.000 đ</p>
+          <a href="#">
+            Mua ngay
+            <img src="../assets/banner_3/icon_buy_now.png" alt="" />
+          </a>
+        </div>
+        <div class="banner_3_content_center">
+          <swiper
+            :spaceBetween="30"
+            :centeredSlides="true"
+            :pagination="{
+              clickable: true,
+            }"
+            :autoplay="{
+              delay: 4000,
+              disableOnInteraction: false,
+            }"
+            :navigation="true"
+            :modules="modules"
+            class="mySwiper"
+          >
+            <swiper-slide>
+              <img src="../assets/banner_3/airpods.png" alt="" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="../assets/banner_3/airpods.png" alt="" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="../assets/banner_3/airpods.png" alt="" />
+            </swiper-slide>
+          </swiper>
+        </div>
+        <div class="banner_3_content_right">
+          <div class="row">
+            <div class="brand_item"></div>
+            <div class="brand_item"></div>
+            <div class="brand_item"></div>
+            <div class="brand_item"></div>
+            <div class="brand_item"></div>
+            <div class="brand_item"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section-vue title="d"></section-vue>
 </template>
 
 <script>
 import dHeader from "./dHeader.vue";
+import ProductItem from "./productItem.vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
+import SectionVue from "./SectionVue.vue";
 
 import "swiper/css";
 
@@ -129,8 +275,10 @@ export default {
 
   components: {
     dHeader,
+    ProductItem,
     Swiper,
     SwiperSlide,
+    SectionVue,
   },
   setup() {
     return {
