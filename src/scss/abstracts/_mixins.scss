@@ -1,0 +1,13 @@
+@mixin line_clamp($number) {
+    display: -webkit-box;
+    -webkit-line-clamp: $number;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@mixin container {
+    .container {
+        display: flex;
+        align-items: center;
+      }
+}
