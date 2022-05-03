@@ -1,0 +1,15 @@
+<template>
+  <div class="col-lg-2 col-md-12 col-sm-12 col-12">
+    <div class="content_right_brand">
+      <img src="../assets/banner_3/brand_1.png" alt="" />
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "brandItem",
+};
+</script>
+
+<style></style>
