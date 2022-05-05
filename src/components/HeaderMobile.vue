@@ -70,7 +70,7 @@
           </div>
         </section>
         <div class="header_mobile_nav_search" v-if="isShowFormSearch">
-          <div class="search" @click="showFormSearch()">
+          <div class="search">
             <input
               type="text"
               class="form-control"

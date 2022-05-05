@@ -1,7 +1,10 @@
 <template>
   <div class="banner_3_content">
     <div class="row">
-      <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+      <div class="banner_3_title_mobile">
+        <h1>TAI NGHE</h1>
+      </div>
+      <div class="col-lg-3 col-md-12 col-sm-12 col-12 order-3 order-md-0">
         <div class="banner_3_content_left">
           <h1>Thương hiệu</h1>
           <img src="../assets/banner_3/logo_apple.png" alt="" />
@@ -14,7 +17,7 @@
           </a>
         </div>
       </div>
-      <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+      <div class="col-lg-6 col-md-12 col-sm-12 col-12 order-2 order-md-0">
         <div class="banner_3_content_center">
           <swiper
             :spaceBetween="30"
@@ -22,10 +25,7 @@
             :pagination="{
               clickable: true,
             }"
-            :autoplay="{
-              delay: 4000,
-              disableOnInteraction: false,
-            }"
+            :autoplay="false"
             :navigation="true"
             :modules="modules"
             class="mySwiper"
@@ -48,36 +48,42 @@
           </swiper>
         </div>
       </div>
-      <div class="col-lg-3 col-md-12 col-sm-12 col-12" style="padding: 0">
+      <div class="banner_3_title_mobile order-4 order-md-0">
+        <h1>NHÃN HÀNG NỔI TIẾNG</h1>
+      </div>
+      <div
+        class="col-lg-3 col-md-12 col-sm-12 col-12 order-5 order-md-0"
+        style="padding: 0"
+      >
         <div class="banner_3_content_right">
           <div class="row">
-            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-              <div class="brand_item">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6 custom_col">
+              <div class="brand_item aspect-ratio">
                 <img src="../assets/banner_3/brand_1.png" alt="" />
               </div>
             </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-              <div class="brand_item">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6 custom_col">
+              <div class="brand_item aspect-ratio">
                 <img src="../assets/banner_3/brand_2.png" alt="" />
               </div>
             </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-              <div class="brand_item">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6 custom_col">
+              <div class="brand_item aspect-ratio">
                 <img src="../assets/banner_3/brand_3.png" alt="" />
               </div>
             </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-              <div class="brand_item">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6 custom_col">
+              <div class="brand_item aspect-ratio">
                 <img src="../assets/banner_3/brand_4.png" alt="" />
               </div>
             </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-              <div class="brand_item">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6 custom_col">
+              <div class="brand_item aspect-ratio">
                 <img src="../assets/banner_3/brand_5.png" alt="" />
               </div>
             </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-              <div class="brand_item">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6 custom_col">
+              <div class="brand_item aspect-ratio">
                 <img src="../assets/banner_3/brand_6.png" alt="" />
               </div>
             </div>

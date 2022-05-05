@@ -1,7 +1,9 @@
 <template>
   <div class="col-lg-2 col-md-3 col-sm-6 col-6">
     <div class="item">
-      <img src="../assets/products_best_seller/product1.png" alt="" />
+      <div class="aspect-ratio">
+        <img src="../assets/products_best_seller/product1.png" alt="" />
+      </div>
       <div class="color">
         <div></div>
         <div></div>
@@ -13,7 +15,9 @@
   </div>
   <div class="col-lg-2 col-md-3 col-sm-6 col-6">
     <div class="item">
-      <img src="../assets/products_best_seller/product2.png" alt="" />
+      <div class="aspect-ratio">
+        <img src="../assets/products_best_seller/product2.png" alt="" />
+      </div>
       <div class="color">
         <div></div>
         <div></div>
@@ -25,7 +29,9 @@
   </div>
   <div class="col-lg-2 col-md-3 col-sm-6 col-6">
     <div class="item">
-      <img src="../assets/products_best_seller/product3.png" alt="" />
+      <div class="aspect-ratio">
+        <img src="../assets/products_best_seller/product3.png" alt="" />
+      </div>
       <div class="color">
         <div></div>
         <div></div>
@@ -37,7 +43,9 @@
   </div>
   <div class="col-lg-2 col-md-3 col-sm-6 col-6">
     <div class="item item4">
-      <img src="../assets/products_best_seller/product4.png" alt="" />
+      <div class="aspect-ratio">
+        <img src="../assets/products_best_seller/product4.png" alt="" />
+      </div>
       <div class="color">
         <div></div>
         <div></div>
@@ -49,7 +57,9 @@
   </div>
   <div class="col-lg-2 col-md-3 col-sm-6 col-6">
     <div class="item">
-      <img src="../assets/products_best_seller/product5.png" alt="" />
+      <div class="aspect-ratio">
+        <img src="../assets/products_best_seller/product5.png" alt="" />
+      </div>
       <div class="color">
         <div></div>
         <div></div>
@@ -61,7 +71,9 @@
   </div>
   <div class="col-lg-2 col-md-3 col-sm-6 col-6">
     <div class="item item6">
-      <img src="../assets/products_best_seller/product6.png" alt="" />
+      <div class="aspect-ratio">
+        <img src="../assets/products_best_seller/product6.png" alt="" />
+      </div>
       <div class="color">
         <div></div>
         <div></div>
@@ -78,9 +90,7 @@
 <script>
 export default {
   name: "ProductItem",
-  setup(){
-
-  }
+  setup() {},
 };
 </script>
 

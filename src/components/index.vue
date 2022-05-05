@@ -7,7 +7,7 @@
   <div class="carousel_news">
     <div class="container">
       <div class="row">
-        <div class="col-lg-9 col-sm-12">
+        <div class="col-lg-9 col-md-12 col-sm-12 col-12 custom_carousel">
           <div class="carousel">
             <swiper
               :spaceBetween="30"
@@ -76,9 +76,9 @@
   <!-- PRODUCT_HOT -->
   <section class="product_hot">
     <div class="container">
-      <div class="row">
+      <div class="row gx-10px">
         <div class="col-lg-4 col-md-12 col-sm-12 col-12 product_hot_item">
-          <div class="card">
+          <div class="card categories-card">
             <div class="card-body">
               <span>Hot</span>
               <p>SẢN PHẨM NỔI BẬT</p>
@@ -92,7 +92,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-12 col-sm-12 col-12 product_hot_item">
-          <div class="card product_hot_item_2">
+          <div class="card categories-card">
             <div class="card-body">
               <span>?%</span>
               <p>SẢN PHẨM KHUYẾN MÃI</p>
@@ -105,7 +105,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-12 col-sm-12 col-12 product_hot_item">
-          <div class="card">
+          <div class="card categories-card">
             <div class="card-body">
               <span>New</span>
               <p>SẢN PHẨM MỚI</p>
@@ -150,19 +150,19 @@
   <section class="products_best_seller">
     <div class="container">
       <div class="products_best_seller_title">
-        <h1>
-          SẢN PHẨM NỔI BẬT
-          <button>
+        <h1>SẢN PHẨM NỔI BẬT</h1>
+        <p>Các sản phẩm được người dùng đánh giá cao vì chất lượng</p>
+        <div class="btn_products_best_seller">
+          <button class="btn_prev">
             <img
               src="../assets/products_best_seller/icon_previous.png"
               alt=""
             />
           </button>
-          <button>
+          <button class="btn_next">
             <img src="../assets/products_best_seller/icon_next.png" alt="" />
           </button>
-        </h1>
-        <p>Các sản phẩm được người dùng đánh giá cao vì chất lượng</p>
+        </div>
       </div>
 
       <div class="products_best_seller_list">
@@ -243,18 +243,24 @@
   </section>
 
   <!-- BANNER 3 -->
-  <section class="container">
+  <section class="container banner">
     <div class="banner_3">
       <div class="banner_3_title">
         <h1>TAI NGHE</h1>
         <h1>NHÃN HÀNG NỔI TIẾNG</h1>
       </div>
+      <!-- <div class="banner_3_title_mobile">
+        <h1>TAI NGHE</h1>
+      </div> -->
       <BannerItem />
+      <!-- <div class="banner_3_title_mobile">
+        <h1>NHÃN HÀNG NỔI TIẾNG</h1>
+      </div> -->
     </div>
   </section>
 
   <!-- BANNER 4 -->
-  <section class="container">
+  <section class="container banner">
     <div class="banner_3 banner_4">
       <div class="banner_3_title">
         <h1>ĐIỆN THOẠI</h1>
@@ -266,121 +272,74 @@
 
   <!-- PRODUCT_SLIDER -->
   <section class="product_slider">
-    <div class="row">
-      <div class="col-lg-12 col-sm-12">
-        <div style="display: flex; align-items: center">
-          <div class="prevProductSlider">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+    <div class="container-xxl">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12">
+          <div style="display: flex; align-items: center">
+            <div class="prevProductSlider">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 18L9 12L15 6"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <swiper
+              ref="{swiperRef}"
+              :centeredSlides="false"
+              :loop="true"
+              :navigation="{
+                prevEl: '.prevProductSlider',
+                nextEl: '.nextProductSlider',
+              }"
+              :breakpoints="{
+                320: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                500: {
+                  slidesPerView: 6,
+                  spaceBetween: 30,
+                },
+              }"
+              :modules="modules"
+              class="mySwiper2"
             >
-              <path
-                d="M15 18L9 12L15 6"
-                stroke="black"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-          <swiper
-            ref="{swiperRef}"
-            :slidesPerView="6"
-            :centeredSlides="false"
-            :spaceBetween="20"
-            :loop="true"
-            :loopFillGroupWithBlank="true"
-            :navigation="{
-              prevEl: '.prevProductSlider',
-              nextEl: '.nextProductSlider',
-            }"
-            :modules="modules"
-            class="mySwiper"
-          >
-            <swiper-slide>
-              <div class="product_slider_item">
-                <img
-                  src="../assets/products_slider/product_slider_1.png"
-                  alt="imgBanner1"
+              <swiper-slide v-for="item in 10" :key="item">
+                <div class="product_slider_item">
+                  <img
+                    src="../assets/products_slider/product_slider_1.png"
+                    alt="imgBanner1"
+                  />
+                </div>
+              </swiper-slide>
+            </swiper>
+            <div class="nextProductSlider">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 18L15 12L9 6"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 />
-              </div>
-            </swiper-slide>
-            <swiper-slide>
-              <div class="product_slider_item">
-                <img
-                  src="../assets/products_slider/product_slider_1.png"
-                  alt="imgBanner1"
-                />
-              </div>
-            </swiper-slide>
-            <swiper-slide>
-              <div class="product_slider_item">
-                <img
-                  src="../assets/products_slider/product_slider_1.png"
-                  alt="imgBanner1"
-                />
-              </div>
-            </swiper-slide>
-            <swiper-slide>
-              <div class="product_slider_item">
-                <img
-                  src="../assets/products_slider/product_slider_1.png"
-                  alt="imgBanner1"
-                />
-              </div>
-            </swiper-slide>
-            <swiper-slide>
-              <div class="product_slider_item">
-                <img
-                  src="../assets/products_slider/product_slider_1.png"
-                  alt="imgBanner1"
-                />
-              </div>
-            </swiper-slide>
-            <swiper-slide>
-              <div class="product_slider_item">
-                <img
-                  src="../assets/products_slider/product_slider_1.png"
-                  alt="imgBanner1"
-                />
-              </div>
-            </swiper-slide>
-            <swiper-slide>
-              <div class="product_slider_item">
-                <img
-                  src="../assets/products_slider/product_slider_1.png"
-                  alt="imgBanner1"
-                />
-              </div>
-            </swiper-slide>
-            <swiper-slide>
-              <div class="product_slider_item">
-                <img
-                  src="../assets/products_slider/product_slider_1.png"
-                  alt="imgBanner1"
-                />
-              </div>
-            </swiper-slide>
-          </swiper>
-          <div class="nextProductSlider">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9 18L15 12L9 6"
-                stroke="black"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
