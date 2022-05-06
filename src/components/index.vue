@@ -12,7 +12,10 @@
             <swiper
               :spaceBetween="30"
               :centeredSlides="true"
-              :autoplay="false"
+              :autoplay="{
+                delay: 4000,
+                disableOnInteraction: false,
+              }"
               :pagination="true"
               :navigation="true"
               :modules="modules"
@@ -91,7 +94,9 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 col-12 product_hot_item">
+        <div
+          class="col-lg-4 col-md-12 col-sm-12 col-12 product_hot_item product_hot_item_2"
+        >
           <div class="card categories-card">
             <div class="card-body">
               <span>?%</span>
@@ -147,32 +152,7 @@
   </section>
 
   <!-- PRODUCTS_BEST_SELLER -->
-  <section class="products_best_seller">
-    <div class="container">
-      <div class="products_best_seller_title">
-        <h1>SẢN PHẨM NỔI BẬT</h1>
-        <p>Các sản phẩm được người dùng đánh giá cao vì chất lượng</p>
-        <div class="btn_products_best_seller">
-          <button class="btn_prev">
-            <img
-              src="../assets/products_best_seller/icon_previous.png"
-              alt=""
-            />
-          </button>
-          <button class="btn_next">
-            <img src="../assets/products_best_seller/icon_next.png" alt="" />
-          </button>
-        </div>
-      </div>
-
-      <div class="products_best_seller_list">
-        <div class="row">
-          <ProductItem />
-          <ProductItem />
-        </div>
-      </div>
-    </div>
-  </section>
+  <FeaturedProducts />
 
   <!-- BANNER 2 -->
   <section class="container banner_2">
@@ -393,6 +373,7 @@ import { ref } from "vue";
 import Header from "./Header.vue";
 import HeaderMobile from "./HeaderMobile.vue";
 import ProductItem from "./ProductItem.vue";
+import FeaturedProducts from "./FeaturedProducts.vue";
 import BannerItem from "./Banner.vue";
 import Footer from "./Footer.vue";
 
@@ -412,6 +393,7 @@ export default {
     Header,
     HeaderMobile,
     ProductItem,
+    FeaturedProducts,
     BannerItem,
     Footer,
     Swiper,

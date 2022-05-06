@@ -26,7 +26,7 @@
               clickable: true,
             }"
             :autoplay="{
-              delay: 4000,
+              delay: 2500,
               disableOnInteraction: false,
             }"
             :navigation="true"
@@ -61,32 +61,32 @@
         <div class="banner_3_content_right">
           <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 col-6 custom_col">
-              <div class="brand_item aspect-ratio">
+              <div class="brand_item">
                 <img src="../assets/banner_3/brand_1.png" alt="" />
               </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-6 custom_col">
-              <div class="brand_item aspect-ratio">
+              <div class="brand_item">
                 <img src="../assets/banner_3/brand_2.png" alt="" />
               </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-6 custom_col">
-              <div class="brand_item aspect-ratio">
+              <div class="brand_item">
                 <img src="../assets/banner_3/brand_3.png" alt="" />
               </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-6 custom_col">
-              <div class="brand_item aspect-ratio">
+              <div class="brand_item">
                 <img src="../assets/banner_3/brand_4.png" alt="" />
               </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-6 custom_col">
-              <div class="brand_item aspect-ratio">
+              <div class="brand_item">
                 <img src="../assets/banner_3/brand_5.png" alt="" />
               </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-6 custom_col">
-              <div class="brand_item aspect-ratio">
+              <div class="brand_item">
                 <img src="../assets/banner_3/brand_6.png" alt="" />
               </div>
             </div>

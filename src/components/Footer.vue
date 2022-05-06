@@ -4,14 +4,14 @@
       <div class="col-lg-12 border_bottom_footer">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-6">
               <div class="footer_top">
                 <h1 class="footer_title">TIN TỨC</h1>
                 <h4 class="footer_item">Tin tức công nghệ</h4>
                 <h4 class="footer_item">Tin tức công nghệ</h4>
               </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-6">
               <div class="footer_top">
                 <h1 class="footer_title">CHÍNH SÁCH</h1>
                 <h4 class="footer_item">Chính sách bảo hành</h4>
@@ -19,7 +19,7 @@
                 <h4 class="footer_item">Chi tiết bảo hành VIP của Samsung</h4>
               </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-6">
               <div class="footer_top">
                 <h1 class="footer_title">HỖ TRỢ</h1>
                 <h4 class="footer_item">Hình thức thanh toán</h4>
@@ -106,7 +106,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-6">
               <div class="footer_top">
                 <h1 class="footer_title">THANH TOÁN</h1>
                 <div class="payment">
@@ -128,14 +128,14 @@
       >
         <div class="container">
           <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-6">
               <div class="footer_contact">
                 <a href="#" class="logo_footer">
                   <img src="../assets/logo2.png" alt="logo2" />
                 </a>
               </div>
             </div>
-            <div class="col-lg-3" style="padding-top: 10px">
+            <div class="col-lg-3 col-12" style="padding-top: 10px">
               <div class="footer_contact">
                 <h4 class="footer_item">
                   <svg
@@ -176,7 +176,7 @@
                 </h4>
               </div>
             </div>
-            <div class="col-lg-3" style="padding-top: 10px">
+            <div class="col-lg-3 col-12" style="padding-top: 10px">
               <div class="footer_contact">
                 <h4 class="footer_item">
                   <svg
@@ -213,7 +213,7 @@
                 </h4>
               </div>
             </div>
-            <div class="col-lg-3" style="padding-top: 20px">
+            <div class="col-lg-3 col-6" style="padding-top: 20px">
               <div class="footer_contact">
                 <input type="text" placeholder="mail..." />
                 <button class="btn btnSend">GỬI</button>
@@ -247,7 +247,7 @@
 
 <script>
 export default {
-    name: "dFooter",
+  name: "dFooter",
 };
 </script>
 
