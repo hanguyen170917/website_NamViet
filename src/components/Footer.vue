@@ -4,14 +4,14 @@
       <div class="col-lg-12 border_bottom_footer">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-3 col-md-6">
               <div class="footer_top">
                 <h1 class="footer_title">TIN TỨC</h1>
                 <h4 class="footer_item">Tin tức công nghệ</h4>
                 <h4 class="footer_item">Tin tức công nghệ</h4>
               </div>
             </div>
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-3 col-md-6">
               <div class="footer_top">
                 <h1 class="footer_title">CHÍNH SÁCH</h1>
                 <h4 class="footer_item">Chính sách bảo hành</h4>
@@ -19,7 +19,7 @@
                 <h4 class="footer_item">Chi tiết bảo hành VIP của Samsung</h4>
               </div>
             </div>
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-3 col-md-6">
               <div class="footer_top">
                 <h1 class="footer_title">HỖ TRỢ</h1>
                 <h4 class="footer_item">Hình thức thanh toán</h4>
@@ -106,7 +106,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-3 col-md-6">
               <div class="footer_top">
                 <h1 class="footer_title">THANH TOÁN</h1>
                 <div class="payment">
@@ -114,7 +114,7 @@
                   <img src="../assets/footer/payment2.png" alt="" />
                   <img src="../assets/footer/payment3.png" alt="" />
                 </div>
-                <div class="certifiation">
+                <div class="certifiation col-7">
                   <img src="../assets/footer/certifiation.png" alt="" />
                 </div>
               </div>
@@ -226,12 +226,24 @@
         <div class="container">
           <div class="footer_menu">
             <ul>
-              <li>Trang chủ</li>
-              <li>Sản phẩm</li>
-              <li>Tin tức</li>
-              <li>Chính sách</li>
-              <li>Hỗ trợ</li>
-              <li>Thanh toán</li>
+              <a href="#">
+                <li>Trang chủ</li>
+              </a>
+              <a href="#">
+                <li>Sản phẩm</li>
+              </a>
+              <a href="#">
+                <li>Tin tức</li>
+              </a>
+              <a href="#">
+                <li>Chính sách</li>
+              </a>
+              <a href="#">
+                <li>Hỗ trợ</li>
+              </a>
+              <a href="#">
+                <li>Thanh toán</li>
+              </a>
             </ul>
           </div>
         </div>

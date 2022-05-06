@@ -312,6 +312,7 @@ $grid-breakpoints: (
 }
 .categories-card {
   height: 100%;
+  border: none;
   .card-body {
     padding: 0;
     background-color: $bg-2;
@@ -831,6 +832,12 @@ $grid-breakpoints: (
   margin-bottom: 30px;
   text-align: center;
   line-height: 76px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
 }
 
 .banner_3_content_center .swiper-pagination-bullet-active {
@@ -1047,10 +1054,12 @@ $grid-breakpoints: (
     justify-content: center;
     margin: 0;
 
-    li {
+    a {
+      text-decoration: none;
+      color: #fff;
       padding: 0 24px;
       position: relative;
-      // border-right: 1px solid #FFFFFF;
+
       &::after {
         content: "";
         height: 20px;
@@ -1058,6 +1067,7 @@ $grid-breakpoints: (
         position: absolute;
         background: $bg-1;
         right: 0;
+        top: 0;
       }
       &:last-child::after {
         display: none;
@@ -1103,6 +1113,7 @@ $grid-breakpoints: (
 
   .product_slider {
     padding: 25px 0;
+    margin: 0 20px;
   }
 
   .product_hot_item_2 {
@@ -1307,7 +1318,8 @@ $grid-breakpoints: (
     margin: 0;
     padding: 0;
 
-    li {
+    a {
+      padding: 0 5px;
       padding: 0 5px;
       position: relative;
       font-size: 10px;
@@ -1481,10 +1493,6 @@ $grid-breakpoints: (
     margin: 0;
   }
 
-  .product_hot_item_2 {
-    margin: 10px 0;
-  }
-
   .btn_products_best_seller {
     display: flex;
     justify-content: right;
@@ -1579,10 +1587,10 @@ $grid-breakpoints: (
     margin: 0;
     padding: 0;
 
-    li {
-      padding: 0 5px;
+    a {
+      padding: 0 10px;
       position: relative;
-      font-size: 13px;
+      font-size: 10px;
 
       &::after {
         height: 100%;

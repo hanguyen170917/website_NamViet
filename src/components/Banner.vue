@@ -25,10 +25,7 @@
             :pagination="{
               clickable: true,
             }"
-            :autoplay="{
-              delay: 2500,
-              disableOnInteraction: false,
-            }"
+            :autoplay="false"
             :navigation="true"
             :modules="modules"
             class="mySwiper"

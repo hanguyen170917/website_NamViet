@@ -287,6 +287,10 @@
                   spaceBetween: 20,
                 },
                 500: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+                700: {
                   slidesPerView: 6,
                   spaceBetween: 30,
                 },
